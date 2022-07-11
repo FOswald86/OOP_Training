@@ -5,7 +5,7 @@
 2.) Grundlagen zum arbeiten mit Objekten, Tips und Tricks mit Intellij, Datentyp var  
 3.) Objektorientierung anhand von Beispiel: Auto  
   
-https://eduhtlklu.sharepoint.com/:v:/r/sites/InformatikLerngruppe/Shared%20Documents/General/Recordings/OOP_Training.mp4?csf=1&web=1&e=KmW9Av
+https://eduhtlklu.sharepoint.com/:v:/r/sites/InformatikLerngruppe/Shared%20Documents/General/Recordings/OOP_Training.mp4?csf=1&web=1&e=KmW9Av  
 Fehlerhafte Aussage von mir bei 1h:02min  
 Richtigstellung:  
 Unterschied statische Methoden zu nicht statischen Methoden  
