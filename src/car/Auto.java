@@ -6,11 +6,11 @@ public class Auto {
     String marke;
     int ps;
     double preis;
-    static int haltbarkeit = 100;
-    static int reparaturAnzahl = 0;
+    int haltbarkeit = 100;
+    int reparaturAnzahl = 0;
     int reifen = 4;
 
-    // Konstruktoren - Fabrikmethoden
+    // Konstruktoren
     public Auto( String marke, int ps, double preis ) {
         this.marke = marke;
         this.ps = ps;
@@ -29,13 +29,13 @@ public class Auto {
 
     // Methoden
     // Was kann ein Auto machen?
-    public static void fahren() {
-        System.out.println("Das Auto faehrt");
+    public void fahren() {
+        System.out.println( "Das Auto faehrt" );
         haltbarkeit--;
     }
 
     public void reparatur() {
-        System.out.println("Das Auto wird repariert");
+        System.out.println( "Das Auto wird repariert" );
         haltbarkeit = 95 - reparaturAnzahl * 5;
         reparaturAnzahl++;
     }
@@ -46,30 +46,6 @@ public class Auto {
 
 
     // Getter und Setter
-    public int getReifen() {
-        return reifen;
-    }
-
-    public void setReifen( int reifen ) {
-        this.reifen = reifen;
-    }
-
-    public static int getReparaturAnzahl() {
-        return reparaturAnzahl;
-    }
-
-    public static void setReparaturAnzahl( int reparaturAnzahl ) {
-        Auto.reparaturAnzahl = reparaturAnzahl;
-    }
-
-    public static int getHaltbarkeit() {
-        return haltbarkeit;
-    }
-
-    public static void setHaltbarkeit( int haltbarkeit ) {
-        Auto.haltbarkeit = haltbarkeit;
-    }
-
     public String getMarke() {
         return marke;
     }
@@ -94,5 +70,27 @@ public class Auto {
         this.preis = preis;
     }
 
+    public int getHaltbarkeit() {
+        return haltbarkeit;
+    }
 
+    public void setHaltbarkeit( int haltbarkeit ) {
+        this.haltbarkeit = haltbarkeit;
+    }
+
+    public int getReparaturAnzahl() {
+        return reparaturAnzahl;
+    }
+
+    public void setReparaturAnzahl( int reparaturAnzahl ) {
+        this.reparaturAnzahl = reparaturAnzahl;
+    }
+
+    public int getReifen() {
+        return reifen;
+    }
+
+    public void setReifen( int reifen ) {
+        this.reifen = reifen;
+    }
 }

@@ -2,7 +2,7 @@ package car;
 
 public class Main {
 
-    public static void main( String[] args ) {
+    void main( String[] args ) {
 
         Auto auto = new Auto();
 
@@ -22,7 +22,7 @@ public class Main {
         Auto auto2 = new Auto();
         auto2.setMarke( "Seat" );
         Auto auto3 = new Auto();
-        auto3.setMarke( "Popel");
+        auto3.setMarke( "Popel" );
 
         Auto audi = new Auto( "Audi", 150, 13999.99 );
         audi.print();
@@ -33,10 +33,9 @@ public class Main {
 
     }
 
-    private static void AutoAbnuetzungUndReperaturSchulweg( int km, Auto auto ) {
-        int kmAbendschulWeg = km;
-        // Abendschulweg Hin und Retour
-        int kmAbendschulWegSemester = kmAbendschulWeg * 2 * 16 * 5;
+    void AutoAbnuetzungUndReperaturSchulweg( int km, Auto auto ) {
+        // Abendschulweg Hin und Retour - 16x pro Monat - 5 Monate lang
+        int kmAbendschulWegSemester = km * 2 * 16 * 5;
 
         for ( int i = 0; i < kmAbendschulWegSemester; i++ ) {
             auto.fahren();
@@ -44,11 +43,11 @@ public class Main {
                 auto.reparatur();
             }
             if ( auto.getHaltbarkeit() <= 10 ) {
-                System.out.println("Du brauchst ein neues Auto");
+                System.out.println( "Du brauchst ein neues Auto" );
                 break;
             }
         }
-        System.out.println("Reperaturanzahl: " + auto.getReparaturAnzahl());
+        System.out.println( "Reperaturanzahl: " + auto.getReparaturAnzahl() );
     }
 
 }

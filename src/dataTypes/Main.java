@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main( String[] args ) {
+    public staticMethoden void main( String[] args ) {
 
         // primitive Datentypen
         // int, double, boolean usw.
@@ -18,6 +18,8 @@ public class Main {
         Scanner scanner = new Scanner( System.in );
         int[] ints = new int[10];
 
+        // Mit dem Punkt hinter dem Variablen-Namen kann man sich Möglichkeiten anzeigen lassen,
+        // was man mit dem Objekt machen kann
         char[] chars = name.toCharArray();
         boolean b = random.nextBoolean();
         int monthValue = now.getMonthValue();
