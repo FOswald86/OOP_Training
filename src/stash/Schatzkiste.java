@@ -4,7 +4,7 @@ public class Schatzkiste {
 
     // Eine Schatzkiste ist üblicherweise mit zufälligen Wertsachen gefüllt und kann auch mal verschlossen sein.
     int gold;
-    String rüstung;
+    String ruestung;
     String juwel;
     boolean versperrt;
 
