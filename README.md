@@ -6,10 +6,14 @@
 3.) Objektorientierung anhand von Beispiel: Auto  
   
 https://eduhtlklu.sharepoint.com/:v:/r/sites/InformatikLerngruppe/Shared%20Documents/General/Recordings/OOP_Training.mp4?csf=1&web=1&e=KmW9Av
-Fehlerhafte Aussage von mir bei Minute  
+Fehlerhafte Aussage von mir bei 1h:02min  
 Richtigstellung:  
 Unterschied statische Methoden zu nicht statischen Methoden  
 Also die static Methoden kann man ohne Objekt-Bezug aufrufen.  
 Wenn die Methode nicht static ist kann man sie nur auf das Objekt ausführen.  
   
 PS: Im Programm ist bereits alles richtig gestellt... lehren kann schon anstrengend sein und wenn man es nicht gewohnt ist kann man auch leicht mal durcheinander kommen. =)
+
+Notiz an mich selbst:  
+this greift auf die Variable des Objekts der Klasse zurück (Verdeutlichung)  
+Getter und Setter privacy Zusammenhang  
