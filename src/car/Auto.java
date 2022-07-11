@@ -31,13 +31,13 @@ public class Auto {
     // Was kann ein Auto machen?
     public void fahren() {
         System.out.println( "Das Auto faehrt" );
-        haltbarkeit--;
+        this.haltbarkeit--;
     }
 
     public void reparatur() {
         System.out.println( "Das Auto wird repariert" );
-        haltbarkeit = 95 - reparaturAnzahl * 5;
-        reparaturAnzahl++;
+        this.haltbarkeit = 95 - this.reparaturAnzahl * 5;
+        this.reparaturAnzahl++;
     }
 
     public void print() {
