@@ -18,7 +18,9 @@ public class Auto {
     }
 
     public Auto() {
-
+        // So sieht der Standard-Konstruktor aus.
+        // Legt man eigene individuelle Konstruktoren an muss dieser leere Konstruktor mit angelegt werden,
+        // damit der Compiler unterscheiden kann, ob man den Standard- oder den Überladenen-Konstruktor oder haben will
     }
 
     public Auto( String mercedes, int ps ) {
@@ -28,6 +30,15 @@ public class Auto {
 
 
     // Methoden
+    // Fabrikmethode
+    public static Auto getInstance(String marke, int ps, double preis){
+        Auto auto = new Auto();
+        auto.setMarke( marke );
+        auto.setPs( ps );
+        auto.setPreis( preis );
+        return auto;
+    }
+
     // Was kann ein Auto machen?
     public void fahren() {
         System.out.println( "Das Auto faehrt" );
@@ -45,7 +56,7 @@ public class Auto {
     }
 
 
-    // Getter und Setter
+    // Getter und Setter automatisch generieren mit ALT+EINF
     public String getMarke() {
         return marke;
     }

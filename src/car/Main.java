@@ -24,12 +24,18 @@ public class Main {
         Auto auto3 = new Auto();
         auto3.setMarke( "Popel" );
 
+        // Konstruktor
         Auto audi = new Auto( "Audi", 150, 13999.99 );
         audi.print();
         AutoAbnuetzungUndReperaturSchulweg( 25, audi );
 
+        // Überladener Konstruktor
         Auto mercedes = new Auto( "Mercedes", 220 );
         mercedes.print();
+
+        // Fabrikmethode
+        Auto suzuki = Auto.getInstance( "Suzuki", 45, 7999.99 );
+        suzuki.print();
 
     }
 
