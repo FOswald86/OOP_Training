@@ -20,3 +20,5 @@ PS: Im Programm ist bereits alles richtig gestellt... lehren kann schon anstreng
 Notiz an mich selbst:  
 this greift auf die Variable des Objekts der Klasse zurück (Verdeutlichung)  
 Getter und Setter privacy Zusammenhang  
+Unterschied Konstruktor und Fabrikmethode  
+Überladen von Methoden und Konstruktoren  
